@@ -1,20 +1,47 @@
 # Room Service Project
 
-Este proyecto utiliza microservicios en Node.js y una base de datos MySQL. Permite agregar y mostrar habitaciones a través de una interfaz web.
+Members: Jonathan Chasipanta - Gonzalo Guachamin
 
-## Requisitos previos
+This project uses microservices in Node.js and a MySQL database. It allows adding and displaying hotel services through a web interface.
 
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
+## Requirements
+- Node v20.13.1
+- Docker version 26.0.0
 
-- Node.js
-- MySQL Server
-- AWS account (para despliegue)
+## Installation
 
-## Configuración inicial
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/JonathanP06511/P1M1-microservicioImagen.git
+    ```
 
-1. **Clonar el repositorio:**
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-   ```bash
-   git clone 
-   
+## Usage
+
+1. Start the server:
+    ```bash
+    npm start
+    node server.js
+    ```
+
+2. Open your browser and navigate to http://localhost:3006 to view the frontend interface.
+## Docker Usage
+
+1. Build the Docker image:
+    ```bash
+    docker build -t image-name .
+    ```
+
+2. Run a container using the created image:
+    ```bash
+    docker run -p 8080:3000 -d --name container_name image_name
+    ```
+
+3. Open your browser and navigate to http://localhost:8080 to view the frontend interface.
+
+
 
